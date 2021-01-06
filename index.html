@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>grades-to-go</title>
+  </head>
+  <body>
+    <!-- forms -->
+    <div class="container">
+      <div class="forms-container">
+        <div class="signin-signup">
+            <div class="modal" id="PasswordDontMatch"></div>
+              <form action="#" class="sign-in-form">
+                <h2 class="title">Sign in</h2>
+                <div class="input-field">
+                  <i class="fas fa-user"></i>
+                  <input type="text" placeholder="Username"/>
+                </div>
+                <div class="input-field">
+                  <i class="fas fa-school"></i>
+                <select id="school"name="school" placeholder="Enter School">
+                    <option value="haashall"> No School Selected</option>
+                    <option value="haashall"> Haas Hall Academy</option>
+                    <option value="creekside"> Creekside Middle School</option>
+                </select>                    
+              </div>
+                <div class="input-field">
+                  <i class="fas fa-lock"></i>
+                  <input type="password" placeholder="Password" />
+                </div>
+                <button class="btn solid" onclick="submit()" > sign-in </button>
+              </form>
+              <form action="#" class="sign-up-form">
+                <title>sign-up</title>
+                <h2 class="title">Sign up</h2>
+                    <div class="input-field">
+                    <i class="fas fa-user"></i>
+                      <input type="text" placeholder="Username" />
+                    </div>
+                    <div class="input-field">
+                      <i class="fas fa-envelope"></i>
+                      <input type="email" placeholder="Email" />
+                    </div>
+                    <div class="input-field">
+                      <i class="fas fa-school"></i>
+                    <select id="school"name="school" placeholder="Enter School">
+                        <option value="haashall"> No School Selected</option>
+                        <option value="haashall"> Haas Hall Academy</option>
+                        <option value="creekside"> Creekside Middle School</option>
+                    </select>                    
+                  </div>
+                    <div class="input-field">
+                      <i class="fas fa-lock"></i>
+                      <input type="text" placeholder="Password" />
+                    </div>
+                    <div class="input-field">
+                      <i class="fas fa-lock"></i>
+                      <input type="password" placeholder="Password Check" />
+                    </div>
+                    <button type="submit" value="Login" class="btn solid" > sign-up </button>
+                </form>
+          </div>
+      </div>
+      <!-- panel -->
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <div class="content">
+            <h3>want to join ?</h3>
+            <p>
+              Make a free acount in grades-to-go to go an conquer your grades, with the right data
+            </p>
+            <button class="btn transparent" id="sign-up-btn">
+              Sign up
+            </button>
+          </div>
+        </div>
+        <div class="panel right-panel">
+          <div class="content">
+            <h3>been here before?</h3>
+            <p>
+             Login to accses all of your data
+            </p>
+            <button class="btn transparent" id="sign-in-btn">
+              Sign in
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
